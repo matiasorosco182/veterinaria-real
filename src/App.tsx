@@ -3,7 +3,7 @@
 
 
 
-import VetLanding from './Components/veterinaria'
+import Principal from './Components/Principal'
 import './App.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
 
-<VetLanding/>
+<Principal/>
 
 
 

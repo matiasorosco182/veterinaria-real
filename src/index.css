@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+
+.carrusel{
+   margin: 100px auto;
+   width: 90%;
+   border: 5px solid red;
+   display: flex;
+   overflow: hidden; /* NO auto, sino hidden para que se vea el carrusel */
+}
+
+.carrusel::-webkit-scrollbar{
+    display: none;
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    animation: mover 8s linear infinite;
+}
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
